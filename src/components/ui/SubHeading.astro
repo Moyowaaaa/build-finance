@@ -1,0 +1,18 @@
+---
+interface Props {
+  text: string;
+  maxWidth?: string;
+  textAlign?: string;
+}
+
+const { text, maxWidth, textAlign = "left" } = Astro.props;
+---
+
+<div>
+  <h1
+    style=`max-width: ${maxWidth}; text-align:${textAlign}`
+    class={`text-[3rem] font-[500] font-[sans-medium] text-[#353535] leading-[normal] `}
+  >
+    {text}
+  </h1>
+</div>

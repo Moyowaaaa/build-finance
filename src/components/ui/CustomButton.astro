@@ -1,0 +1,15 @@
+---
+interface Props {
+  text: string;
+  maxWidth?: string;
+  textAlign?: string;
+}
+
+const { text, maxWidth, textAlign = "left" } = Astro.props;
+---
+
+<button
+  class="flex items-center bg-[#353535] text-white w-max px-[1.5rem] py-[0.625rem] rounded-[12px] font-[sans]"
+>
+  {text}
+</button>

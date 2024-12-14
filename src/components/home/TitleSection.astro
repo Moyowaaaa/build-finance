@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import Heading from "../ui/Heading.astro";
+import Paragraph from "../ui/Paragraph.astro";
+import CustomButton from "../ui/CustomButton.astro";
+---
+
+<div class="min-h-screen w-full flex items-center pl-[8rem]">
+  <div class="flex flex-col gap-[2.5rem]">
+    <div
+      class="flex items-center py-[7px] px-[15px] gap-[13px] font-[sans-bold] bg-[#F2F4F7] w-max rounded-[0.438rem]"
+    >
+      <div
+        class="max-w-max flex items-center gap-[6px] px-[16px] py-[4px] rounded-[0.188rem] bg-white"
+      >
+        <p class="text-[0.603rem] font-[500] text-[#1774FD]">A.I Enhanced</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+        >
+          <path
+            d="M9.54318 4.93069C5.7425 4.93069 7.4989 9.49672 4.97716 9.49672C4.97716 4.93069 0.411133 7.45244 0.411133 4.93069C4.97716 4.61107 2.45541 0.36467 4.97716 0.36467C5.9708 4.93069 9.54318 2.40895 9.54318 4.93069Z"
+            fill="url(#paint0_linear_103_1369)"></path>
+          <defs>
+            <linearGradient
+              id="paint0_linear_103_1369"
+              x1="1.22214"
+              y1="1.46052"
+              x2="8.6191"
+              y2="6.02654"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#CA62EF"></stop>
+              <stop offset="0.478125" stop-color="#4B92FB"></stop>
+              <stop offset="0.972916" stop-color="#F6C0D1"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div
+        class="max-w-max flex items-center gap-[6px] px-[16px] py-[4px] rounded-[0.188rem]"
+      >
+        <p class="text-[0.603rem] font-[500] text-[#353535]">
+          Finance aiding tool
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[1.5rem]">
+      <Heading text="Your business best financial tool." maxWidth="30rem" />
+      <Paragraph
+        text="Go beyond the norm of financial monitoring, with  simple, straight to point and of course A.I enhanced financial monitoring for your business."
+        maxWidth="32rem"
+      />
+    </div>
+
+    <CustomButton text="Start Using Block" />
+  </div>
+  <div class="w-[53rem] h-[80vh] absolute right-0">
+    <img
+      src="/images/titleImage.png"
+      alt={""}
+      class="h-full w-full object-contain object-right"
+    />
+  </div>
+</div>

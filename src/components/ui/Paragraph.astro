@@ -1,0 +1,24 @@
+---
+interface Props {
+  text: string;
+  maxWidth?: string;
+  textAlign?: string;
+  lineHeight?: string;
+}
+
+const {
+  text,
+  maxWidth,
+  textAlign = "left",
+  lineHeight = "143.871%",
+} = Astro.props;
+---
+
+<div>
+  <h1
+    style=`max-width: ${maxWidth}; text-align:${textAlign}; line-height:${lineHeight}`
+    class={`text-[1.25rem] font-[500] text-[#A2A2A2] leading-[normal] max-w-${maxWidth} text-${textAlign} leading-[143.871%]`}
+  >
+    {text}
+  </h1>
+</div>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+  maxWidth?: string;
+}
+
+const { text, maxWidth } = Astro.props;
+
+console.log(Astro.props);
+---
+
+<div>
+  <h1
+    style=`max-width: ${maxWidth};`
+    class={`text-[3.25rem] font-[500] font-[sans-bold] text-[#353535] leading-[normal] `}
+  >
+    {text}
+  </h1>
+</div>
