@@ -2,6 +2,8 @@
 import Section from "../../layouts/Section.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import SubHeading from "../ui/SubHeading.astro";
+
+const path = Astro.url;
 ---
 
 <Section>
@@ -308,5 +310,7 @@ import SubHeading from "../ui/SubHeading.astro";
         lineHeight="162%"
       />
     </div>
+
+    {path.pathname}
   </div>
 </Section>

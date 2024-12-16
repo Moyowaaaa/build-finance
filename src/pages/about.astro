@@ -1,11 +1,13 @@
 ---
-type Props = {};
-
-const {} = Astro.props;
+import HeroSection from "../components/about/HeroSection.astro";
+import Layout from "../layouts/Layout.astro";
+import Section from "../layouts/Section.astro";
 ---
 
-<div>
-  <h1>About</h1>
-</div>
+<Layout title="About | Build Finance">
+  <Section>
+    <HeroSection />
+  </Section>
+</Layout>
 
 <style></style>

@@ -1,0 +1,32 @@
+---
+import FeaturesSection from "../components/home/FeaturesSection.astro";
+import Paragraph from "../components/ui/Paragraph.astro";
+import SubHeading from "../components/ui/SubHeading.astro";
+import Layout from "../layouts/Layout.astro";
+import Section from "../layouts/Section.astro";
+---
+
+<Layout title="Solutions | Build Finance">
+  <Section>
+    <div
+      class="min-h-screen max-h-max w-full flex py-[10rem] flex-col gap-[8rem]"
+    >
+      <div class="flex flex-col gap-[20px] pl-[10rem]">
+        <div
+          class="flex items-center py-[7px] px-[15px] gap-[13px] font-[sans-bold] bg-[#F2F4F7] w-max rounded-[0.438rem]"
+        >
+          Our Solutions
+        </div>
+
+        <SubHeading
+          text="So We’ve basically built a tool your team will love"
+          maxWidth="35rem"
+        />
+
+        <Paragraph text="Here is why" maxWidth="49.5rem" />
+      </div>
+
+      <FeaturesSection />
+    </div>
+  </Section>
+</Layout>

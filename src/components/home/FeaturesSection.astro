@@ -2,13 +2,19 @@
 import Section from "../../layouts/Section.astro";
 import Paragraph from "../ui/Paragraph.astro";
 import SubHeading from "../ui/SubHeading.astro";
+
+const path = Astro.url;
 ---
 
 <Section>
   <div
     class="flex flex-col justify-center gap-[5rem] w-full px-[5rem] pt-[5rem] pb-[8rem]"
   >
-    <div class="flex items-center justify-between w-full">
+    <div
+      class={` flex items-center justify-between w-full
+     ${path.pathname === `/solutions` ? "order-2" : ""}
+    `}
+    >
       <div class="flex flex-col gap-[1.5rem]">
         <SubHeading text="Instant invoice creation" />
         <Paragraph
@@ -44,9 +50,13 @@ import SubHeading from "../ui/SubHeading.astro";
       </div>
     </div>
 
-    <div class="flex items-center justify-between w-full">
+    <div
+      class={` 
+     ${path.pathname === `/solutions` ? "order-1" : ""}
+    flex items-center justify-between w-full`}
+    >
       <div class="flex flex-col gap-[1.5rem]">
-        <SubHeading text="Built to look, feel and be easy!" />
+        <SubHeading text="Built to look, feel and be easy!" maxWidth="35rem" />
         <Paragraph
           text="The simplest of looks with all the details necessary for daily business running, no cluttering no stress!"
           maxWidth="35rem"
